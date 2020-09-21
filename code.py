@@ -10,3 +10,34 @@ data = {
 
 df = pd.DataFrame(data=data)
 print(df)
+
+# ---- fillna ----
+# print('\nfillna\n')
+# df_filled = df.fillna({
+#   'temperature': 0,
+#   'windspeed': 0,
+#   'event': 'no event'
+# })
+# print(df_filled)
+
+# ---- carry forward ----
+# new_df = df.fillna(method='ffill', limit=1)
+# print(new_df)
+
+# ---- back fill ----
+# new_df = df.fillna(method='bfill', axis='columns')
+# print(new_df)
+
+# ---- interpolate ----
+# new_df = df.interpolate()
+# print(new_df)
+
+# ---- dropna ----
+# new_df = df.dropna()
+
+# drop where all NaN
+# all_drop = df.dropna(how='all')
+
+# atleast 1 valid value
+# new_df = df.dropna(threshold=1)
+# print(new_df)
